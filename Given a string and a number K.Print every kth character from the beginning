@@ -1,0 +1,13 @@
+n,k=map(str,input().split())
+k=int(k)
+l=[]
+l.insert(0,1)
+for i in n:
+   l.append(i)
+m=[]
+p=k
+for i in l:
+    if l.index(i)%k==0:
+      m.append(i)
+m.pop(0)
+print(*m)
